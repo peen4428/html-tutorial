@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>iframe</title>
+	</head>
+	
+	<body>
+		<h1>HTML iframe</h1>
+		<div>
+			<!--index페이지로 이동  -->
+			<a href="./index.html">목록</a>
+		</div>
+		
+		<h3>1. iframe을 이용하여 웹페이지안에 다른 웹페이지를 보여줄 수 있다.</h3>
+			<div>
+				<ol>
+					<li>&lt;iframe src="demo_iframe.htm" frameborder="0"&gt;&lt;/iframe&gt;</li>
+				</ol>
+			</div>
+		<h3>2. iframe이 다른 링크의 타겟으로 사용될 수 있다.</h3>
+			<div>W3Schools글자를 클릭하면 iframe안의 페이지가<a href="http://www.w3schools.xn--com-ky7m580d/" target="goal"> www.w3schools.com으로</a> 변경된다.</div>
+			<p><a href="https://www.w3schools.com/" target="goal">W3Schools</a></p>
+			<iframe src="demo_iframe.htm" name="goal"></iframe>
+			
+			<ul>
+            <li><a href="http://cafe.naver.com/jjdev" target="_self">jjdev</a></li>
+            <li><a href="http://cafe.naver.com/jjdev" target="_blank">jjdev</a></li>
+            <li><a href="http://cafe.naver.com/jjdev" target="one">jjdev</a></li>
+            <li><a href="http://cafe.naver.com/jjdev" target="two">jjdev</a></li>
+        </ul>
+        <iframe src="http://www.daum.net" name="one"></iframe>
+        <iframe src="http://www.daum.net" name="two"></iframe>
+	</body>
+</html>
