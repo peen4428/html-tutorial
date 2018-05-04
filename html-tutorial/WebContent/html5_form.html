@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>html5_form</title>
+	</head>
+	
+	<body>
+		<h1>HTML5의 시멘틱 태그</h1>
+
+		<div>
+
+			<!--index페이지로 이동  -->
+
+			<a href="./index.html">목록</a>
+
+		</div>
+
+		<h3>1. 새로운 input types</h3>
+			<div>
+				<ul>
+					<li>color</li>
+					<li>date</li>
+					<li>datetime</li>
+					<li>datetime-local</li>
+					<li>email</li>
+					<li>month</li>
+					<li>number</li>
+					<li>range</li>
+					<li>search</li>
+					<li>tel</li>
+					<li>time</li>
+					<li>url</li>
+					<li>week</li>
+				</ul>
+			</div>
+		<h3>2. 새로운 form elements</h3>
+			<div>
+				<ul>
+					<li>&lt;datalist&gt;</li>
+					<li>&lt;keygen&gt;</li>
+					<li>&lt;output&gt;</li>
+				</ul>
+			</div>
+		
+		<h3>3. 새로운 input attributes</h3>
+			<div>
+				<ul>
+					<li>autocomplete</li>
+					<li>autofocus</li>
+					<li>form</li>
+					<li>formaction</li>
+					<li>formenctype</li>
+					<li>formmethod</li>
+					<li>formnovalidate</li>
+					<li>formtarget</li>
+					<li>height and width</li>
+					<li>list</li>
+					<li>min and max</li>
+					<li>multiple</li>
+					<li>pattern (regexp)</li>
+					<li>placeholder</li>
+					<li>required</li>
+					<li>step</li>
+				</ul>
+			</div>
+		
+		<h3>4. 새로운 form attributes</h3>
+			<div>
+				<ul>
+					<li>autocomplete</li>
+					<li>novalidate</li>
+				</ul>
+			</div>
+			<form action="search_result.jsp">  
+		        <table>
+		            <tr>
+		                <td>search</td>
+		                <td><input type="search" autofocus="autofocus"/></td>
+		            </tr>
+		        </table>
+		    </form>
+		   
+		    <form action="form_result.jsp">
+		        <table border="1">
+		           
+		            <tr>
+		                <td colspan="2"><input type="submit"/> | <input type="reset"/></td>
+		            </tr>
+		            <tr>
+		                <td>text,placeholder,pattern,title</td>
+		                <td><input type="text" required="required" placeholder="우편번호" pattern="\d{3}-\d{3}" title="111-111양식"/></td>
+		            </tr>
+		           
+		            <tr>
+		                <td>number</td>
+		                <td><input type="number" required="required" min="0" max="9" step="1"/></td>
+		            </tr>
+		           
+		            <tr>
+		                <td>range</td>
+		                <td><input type="range" required="required" min="0" max="100" step="5"/></td>
+		            </tr>
+		           
+		            <tr>
+		                <td>url</td>
+		                <td><input type="url" required="required"/></td>
+		            </tr>
+		           
+		            <tr>
+		                <td>email</td>
+		                <td><input type="email" required="required"/></td>
+		            </tr>
+		           
+		            <tr>
+		                <td>date</td>
+		                <td><input type="date" required="required"/></td>
+		            </tr>
+		           
+		            <tr>
+		                <td>month</td>
+		                <td><input type="month" required="required"/></td>
+		            </tr>
+		           
+		            <tr>
+		                <td>week</td>
+		                <td><input type="week" required="required"/></td>
+		            </tr>
+		           
+		            <tr>
+		                <td>time</td>
+		                <td><input type="time" required="required"/></td>
+		            </tr>
+		           
+		            <tr>
+		                <td>color</td>
+		                <td><input type="color" required="required"/></td>
+		            </tr>
+		            <tr>
+		                <td>datalist</td>
+		                <td>
+		                    <input list="browsers">
+		                    <datalist id="browsers">
+		                      <option value="Internet Explorer">
+		                      <option value="Firefox">
+		                      <option value="Chrome">
+		                      <option value="Opera">
+		                      <option value="Safari">
+		                    </datalist>
+		                </td>
+		            </tr>
+		        </table>
+		    </form>
+	</body>
+</html>
