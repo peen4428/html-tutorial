@@ -10,7 +10,9 @@
 	<body>
 		<h1>JSP INDEX</h1>
 			<ol>
-				<li><a href="./memberInput.jsp">memberInput</a>
+				<li><a href="./memberInput.jsp">memberInput</a></li>
+				<li><a href="./loginForm.jsp">loginForm</a></li>
+				<li><a href="./loginForm2.jsp">loginForm</a></li>
 			</ol>
 	</body>
 </html>
