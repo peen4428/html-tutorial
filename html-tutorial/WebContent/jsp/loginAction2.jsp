@@ -68,22 +68,22 @@
 				add1 = "주소를 입력하세요";
 			}
 			if(school.equals("")) {
-				result = "회사명(학교)를 입력하세요";
+				school = "회사명(학교)를 입력하세요";
 			}
 			if(num.equals("")) {
-				result = "사업자번호를 입력하세요";
+				num = "사업자번호를 입력하세요";
 			}
 			if(bu.equals("")) {
-				result = "부서명(학과)를 입력하세요";
+				bu = "부서명(학과)를 입력하세요";
 			}
 			if(position.equals("")) {
-				result = "직위(학년)를 입력하세요";
+				position = "직위(학년)를 입력하세요";
 			}
 			if(homepage.equals("")) {
-				result = "홈페이지주소를 입력하세요";
+				homepage = "홈페이지주소를 입력하세요";
 			}
 			if(my.equals("")) {
-				result = "자기소개를 입력하세요";
+				my = "자기소개를 입력하세요";
 			}
 		%>
 		<h1>loginForm</h1>
@@ -93,16 +93,16 @@
 				<table>
 					<tr>
 						<td>사용자 ID</td>
-						<td><input type="text" placeholder="<%=a%>" name="id">
+						<td><input type="text" value="<%=id%>" name="id">
 						<input type="button" value="중복확인"> 띄어쓰기 없는 영문소문자,숫자조합</td>
 					</tr>
 					<tr>
 						<td>비밀번호 </td>
-						<td><input type="password" placeholder="<%=pw%>" name="pw"> 띄어쓰기 없는 영문소문자,숫자조합</td>
+						<td><input type="password" value="<%=pw%>" name="pw"> 띄어쓰기 없는 영문소문자,숫자조합</td>
 					</tr>	
 					<tr>
 						<td>비밀번호확인 </td>
-						<td><input type="password" placeholder="<%=pw1%>" name="pw1"> 비밀번호를 한번더 입력해주세요</td>
+						<td><input type="password" value="<%=pw1%>" name="pw1"> 비밀번호를 한번더 입력해주세요</td>
 					</tr>	
 				</table>
 		</fieldset>
@@ -111,19 +111,19 @@
 				<table>
 					<tr>
 						<td>이름</td>
-						<td><input type="text" name="name"></td>
+						<td><input type="text" value="<%=name%>" name="name"></td>
 					</tr>
 					<tr>
 						<td>주민등록번호</td>
-						<td><input type="text" name="jumin1" maxlength=6> -
-							<input type="text" name="jumin2" maxlength=7>
+						<td><input type="text" value="<%=jumin1%>" name="jumin1" maxlength=6> -
+							<input type="text" name="jumin2" value="<%=jumin2%>" maxlength=7>
 						</td>
 					</tr>
 					<tr>
 						<td>생년월일</td>
-						<td><input type="text" name="a" size=9 maxlength=4> 년 
-							<input type="text" name="b" size=9 maxlength=2> 월 
-							<input type="text" name="c" size=9 maxlength=2> 일 
+						<td><input type="text" value="<%=a%>" name="a" size=9 maxlength=4> 년 
+							<input type="text" name="b" size=9 maxlength=2 value="<%=b%>"> 월 
+							<input type="text" name="c" size=9 maxlength=2 value="<%=c%>"> 일 
 							<input type="radio" name="day">양력 
 							<input type="radio" name="day">음력
 						</td>
@@ -149,8 +149,8 @@
 		                    <option value="055">경남(055)</option>
 		                	<option value="064">제주(064)</option>
 		                	</select> - 
-		                	<input type="text" name="phone2" size=10 maxlength=4> - 
-		                	<input type="text" name="phone3" size=10 maxlength=4>
+		                	<input type="text" value="<%=phone2%>" name="phone2" size=10 maxlength=4> - 
+		                	<input type="text" name="phone3" size=10 maxlength=4 value="<%=phone3%>">
 		                	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		                	<input type="radio" name="work">자택 
 							<input type="radio" name="work">직장
@@ -159,14 +159,14 @@
 					<tr>
 						<td>휴대전화</td>
 						<td>
-							<input type="text" name="p1" size=8 maxlength=3> - 
-		                	<input type="text" name="p2" size=8 maxlength=4> -
-		                	<input type="text" name="p3" size=8 maxlength=4>
+							<input type="text" value="<%=p1%>" name="p1" size=8 maxlength=3> - 
+		                	<input type="text" name="p2" size=8 maxlength=4 value="<%=p2%>"> -
+		                	<input type="text" name="p3" size=8 maxlength=4 value="<%=p3%>">
 						</td>
 					</tr>
 					<tr>
 						<td>E-mail 주소</td>
-						<td><input type="text" placeholder="example@example.com" name="email" size=50></td>
+						<td><input type="text" value="<%=email%>" name="email" size=50></td>
 					</tr>
 					<tr>
 						<td>주소</td>
@@ -179,11 +179,11 @@
 						</td>
 					<tr>
 						<td></td>
-						<td><input type="text" name=add1 size=50></td>
+						<td><input type="text" name=add1 size=50 value="<%=add1%>"></td>
 					</tr>
 					<tr>
 						<td></td>
-						<td><input type="text" name=add2 size=50></td>
+						<td><input type="text" name=add2 size=50 value="<%=add2%>"></td>
 					</tr>
 				</table>
 		</fieldset>
@@ -213,22 +213,22 @@
 					</tr>
 					<tr>
 						<td>회사명(학교)</td>
-						<td><input type=text name=school>
+						<td><input type=text name=school value="<%=school%>">
 						<input type="button" value="찾기">
 						<input type="radio" name="work2">자택 
 						<input type="radio" name="work2">직장</td>
 					</tr>
 					<tr>
 						<td>사업자번호</td>
-						<td><input type="text" name="num"></td>
+						<td><input type="text" name="num" value="<%=num%>"></td>
 					</tr>
 					<tr>
 						<td>부서명(학과)</td>
-						<td><input type="text" name="bu"></td>
+						<td><input type="text" name="bu" value="<%=bu%>"></td>
 					</tr>
 					<tr>
 						<td>직위(학년)</td>
-						<td><input type="text" name="position"></td>
+						<td><input type="text" name="position" value="<%=position%>"></td>
 					</tr>
 					<tr>
 						<td>관심분야</td>
@@ -254,11 +254,11 @@
 					</tr>
 					<tr>
 						<td>홈페이지주소</td>
-						<td><input type="text" name="homepage" size=52></td>
+						<td><input type="text" name="homepage" size=52 value="<%=homepage%>"></td>
 					</tr>
 					<tr>
 						<td>자기소개</td>
-						<td><textarea rows="2" cols="20" name="my"></textarea></td>
+						<td><textarea rows="2" cols="20" name="my" value="<%=my%>"></textarea></td>
 					</tr>
 				</table>
 		</fieldset><br>
